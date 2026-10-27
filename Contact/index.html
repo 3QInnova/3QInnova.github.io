@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact &amp; Messaging Preferences | 3QInnova</title>
+  <meta name="description" content="Contact 3QInnova about customer service and support, with optional consent to receive text messages.">
+  <meta name="theme-color" content="#07101f">
+  <link rel="canonical" href="https://3qinnova.com/Contact/">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/contact.css">
+  <script src="/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="contact-header"><div class="shell nav-wrap">
+    <a class="brand" href="/" aria-label="3QInnova home"><span class="brand-mark" aria-hidden="true"><span>3Q</span></span><span class="brand-name">3Q<span>Innova</span></span></a>
+    <nav aria-label="Primary navigation"><a href="/">Home</a><a href="/Terms_And_Conditions/">Messaging terms</a><a href="/Privacy_Policy/">Privacy</a></nav>
+  </div></header>
+  <main class="contact-main" id="main">
+    <section class="contact-intro"><p class="eyebrow">Let's start a conversation</p><h1>Contact 3QInnova</h1><p>Customer service, technical support, and consulting inquiries.</p></section>
+    <section class="contact-form-section" aria-labelledby="form-title">
+      <h2 id="form-title">3QInnova</h2>
+      <p class="form-lede">Sign up to receive customer service updates and support messages. Choose how you'd like to hear from us.</p>
+      <form id="contact-form" action="mailto:will@3qinnova.com" method="post" enctype="text/plain">
+        <label class="field-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254">
+        <label class="field-label" for="phone">Mobile Phone Number <span class="optional">(optional)</span></label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" maxlength="30" aria-describedby="phone-hint">
+        <p class="field-hint" id="phone-hint">A mobile number is required only if you choose to receive text messages.</p>
+        <div class="consent-row">
+          <input id="sms-consent" name="sms_consent" type="checkbox" aria-describedby="consent-extra">
+          <label for="sms-consent">By checking, you consent to receive <strong>customer service updates and support messages from 3QInnova</strong>. Message frequency may vary. Message and data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to opt out.</label>
+        </div>
+        <p class="consent-extra" id="consent-extra">Text messaging is optional. Consent is not a condition of purchase. You can contact us by email without agreeing to receive texts.</p>
+        <div class="consent-row terms-consent">
+          <input id="terms-consent" name="terms_consent" type="checkbox" required>
+          <label for="terms-consent">By checking, I accept the <a href="/Terms_And_Conditions/" target="_blank" rel="noopener">Terms of Service</a> &amp; <a href="/Privacy_Policy/" target="_blank" rel="noopener">Privacy Policy</a>.</label>
+        </div>
+        <label class="field-label" for="message">How can we help? <span class="optional">(optional)</span></label>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us about your inquiry or support request." maxlength="3000"></textarea>
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <button class="submit-request" type="submit">Continue by email <span aria-hidden="true">↗</span></button>
+        <p class="submit-explanation">This opens your email app with your request and consent choices. <strong>Send the email to complete your request.</strong> This form does not automatically subscribe you or send a text.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+      <noscript><p>JavaScript is disabled. Email <a href="mailto:will@3qinnova.com">will@3qinnova.com</a> directly. This page does not automatically subscribe you to text messages.</p></noscript>
+      <p class="contact-support">Need help? <a href="mailto:will@3qinnova.com">will@3qinnova.com</a></p>
+    </section>
+    <p class="contact-privacy">Please do not include passwords, payment-card details, or other sensitive information.</p>
+  </main>
+  <footer class="contact-footer"><span>© 2026 3QInnova LLC.</span><a href="/Terms_And_Conditions/">Terms of Service</a><a href="/Privacy_Policy/">Privacy Policy</a></footer>
+</body>
+</html>
