@@ -237,3 +237,62 @@ h1 em { display: block; color: transparent; font-style: normal; background: line
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+/* Recent work shares the existing navy/cyan visual identity. */
+.recent-work { background: var(--ink-soft); }
+.recent-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.recent-work-card { padding: 30px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.recent-work-card h3 { font-size: 23px; line-height: 1.2; letter-spacing: -.025em; }
+.recent-work-card p { color: var(--muted); font-size: 14px; }
+.recent-work-card .work-status { color: var(--cyan); font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.recent-work-card .work-boundary { margin-bottom: 0; padding-top: 18px; border-top: 1px solid var(--line); font-size: 12px; }
+section[id] { scroll-margin-top: 140px; }
+@media (max-width: 1000px) { .recent-work-grid { grid-template-columns: 1fr; } }
+
+/* Match the demo's upper-right brand placement without changing its logo artwork. */
+.site-header .brand { flex-shrink: 0; margin-left: auto; }
+@media (max-width: 960px) {
+  .site-header .menu-button { display: block; }
+  .site-header .site-nav { position: absolute; left: 14px; right: 14px; top: calc(100% + 8px); display: none; align-items: stretch; flex-direction: column; gap: 0; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: rgba(7,16,31,.98); box-shadow: var(--shadow); }
+  .site-header .site-nav.is-open { display: flex; }
+  .site-header .site-nav a { padding: 12px; }
+  .site-header .nav-cta { margin-top: 6px; text-align: center; }
+}
+.site-header .brand-logo { display: block; width: clamp(108px, 12vw, 148px); height: auto; max-height: 97px; object-fit: contain; }
+
+/* Review corrections: reserve desktop illustration space and use the supplied full logo. */
+.hero-visual { width: 100%; }
+.core-node { inset: 30%; padding: 8px; border-radius: 50%; background: #050d1a; transform: none; }
+.core-node > * { transform: none; }
+.core-logo { display: block; width: 100%; height: auto; object-fit: contain; }
+.footer-brand .brand-logo { display: block; width: 130px; height: auto; }
+.contact-header .brand { order: 2; margin-left: auto; flex-shrink: 0; }
+.contact-header .brand-logo { display: block; width: 130px; height: auto; }
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 5px; }
+@media (max-width: 960px) {
+  .menu-button[aria-expanded="true"] span:nth-child(2) { transform: translateY(7px) rotate(45deg); }
+  .menu-button[aria-expanded="true"] span:nth-child(3) { opacity: 0; }
+  .menu-button[aria-expanded="true"] span:nth-child(4) { transform: translateY(-7px) rotate(-45deg); }
+}
+@media (max-width: 600px) {
+  .contact-header .nav-wrap { flex-wrap: wrap; gap: 18px; }
+  .contact-header nav { order: 3; flex-basis: 100%; }
+  .contact-header .brand-logo { width: 108px; }
+}
+
+/* Business-oriented copy replaces the inherited numeric impact claims. */
+.business-priorities .proof-grid > div { flex-direction: column; align-items: flex-start; justify-content: center; gap: 8px; min-height: 142px; }
+.business-priorities .proof-grid strong { font-size: 21px; letter-spacing: -.025em; line-height: 1.2; }
+.business-priorities .proof-grid span { max-width: none; font-size: 13px; line-height: 1.45; }
+.business-outcomes .impact-copy { position: static; }
+.business-outcomes .impact-cases { align-content: start; }
+.benefit-case { display: block; }
+.benefit-case .benefit-label { margin-bottom: 16px; color: var(--cyan); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.benefit-case h3 { font-size: 26px; line-height: 1.15; letter-spacing: -.035em; }
+.benefit-case > p:last-child { margin-top: 16px; }
+.business-benefits { padding-left: 20px; margin: 26px 0; color: var(--muted); font-size: 14px; }
+.business-benefits li { margin-bottom: 14px; padding-left: 5px; }
+.business-benefits li::marker { color: var(--cyan); }
+.business-benefits strong { color: var(--white); }
+.capabilities .section-heading > p { color: #53667c; }
