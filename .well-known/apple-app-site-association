@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "NM3KNV8248.com.3qinnova.bramcare"
+        ],
+        "components": [
+          {
+            "/": "/CritterRX/invite/*",
+            "comment": "Open an invitation for review; never accept automatically."
+          }
+        ]
+      }
+    ]
+  }
+}
